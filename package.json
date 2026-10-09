@@ -1,0 +1,30 @@
+{
+  "name": "markethub-monorepo",
+  "version": "1.0.0",
+  "description": "MarketHub – Multi-Vendor E-Commerce Marketplace Monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm --prefix backend run start:dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "prisma:generate": "npm --prefix backend run prisma:generate",
+    "prisma:migrate": "npm --prefix backend run prisma:migrate",
+    "seed": "npm --prefix backend run seed",
+    "test:backend": "npm --prefix backend test"
+  },
+  "keywords": [
+    "ecommerce",
+    "multi-vendor",
+    "nestjs",
+    "nextjs",
+    "prisma",
+    "postgresql"
+  ],
+  "author": "MarketHub Team",
+  "license": "MIT"
+}
